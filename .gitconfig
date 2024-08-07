@@ -1,0 +1,26 @@
+[user]
+	email = bardiyafeili@gmail.com
+  name = Bardiya Feili
+
+[credential "https://github.com"]
+  helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+  helper = !/usr/bin/gh auth git-credential
+
+[core]
+  editor = nvim
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  side-by-side = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
