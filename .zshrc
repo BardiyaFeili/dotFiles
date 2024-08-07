@@ -143,6 +143,7 @@ alias wh='which'
 alias cd='z'
 alias h='hyprctl'
 alias hi='hello'
+alias bt='btop'
 
 alias py='python3'
 alias pipi='pip install'
