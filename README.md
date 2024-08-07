@@ -35,7 +35,7 @@ sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland 
 ```
 
 ```bash
-yay -S hyprshot pyprland hyprpicker
+yay -S hyprshot hyprpicker
 ```
 
 It should be done now
