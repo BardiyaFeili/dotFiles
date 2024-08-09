@@ -21,7 +21,7 @@ Now we need to donwload all the packages
 ### Packages for terminal
 
 ```bash
-sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck ttf-jetbrains-mono-nerd 
+sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop ttf-jetbrains-mono-nerd 
 ```
 
 ```bash
