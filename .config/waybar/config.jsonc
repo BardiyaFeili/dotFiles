@@ -90,8 +90,8 @@
     },
     "custom/launcher": {
         "format": " ",
-        "on-click": "wofi --show drun",
-        "on-click-right": "killall wofi"
+        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh",
+        "on-click-right": "killall rofi"
     },
     "custom/power": {
         "format": " ",
