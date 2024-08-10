@@ -26,8 +26,8 @@ stow .
 
 ## Installing all the programs
 
-[!NOTE]
-First install yay then do the rest
+> [!WARNING]
+> First install yay then do the rest
 
 ### Packages for terminal
 
