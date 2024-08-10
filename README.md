@@ -5,7 +5,7 @@
 ### First get the packages required to get the dots
 
 ```bash
-sudo pacman -S stow github-cli
+sudo pacman -S stow git github-cli
 ```
 
 ### Login into github
@@ -26,7 +26,7 @@ stow .
 
 ## Installing all the programs
 
-[!NOTE]  
+[!NOTE]
 First install yay then do the rest
 
 ### Packages for terminal
