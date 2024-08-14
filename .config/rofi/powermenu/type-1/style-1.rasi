@@ -65,14 +65,6 @@ inputbar {
     children:                    [ "textbox-prompt-colon", "prompt"];
 }
 
-textbox-prompt-colon {
-    enabled:                     true;
-    expand:                      false;
-    str:                         "";
-    padding:                     10px 14px;
-    border-radius:               10px;
-    background-color:            @urgent;
-    text-color:                  @background;
 }
 prompt {
     enabled:                     true;
