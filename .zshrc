@@ -45,6 +45,7 @@ export EDITOR='nvim'
 export HOME="/home/bardiya" export 
 export HYPRSHOT_DIR=$HOME/Pictures/Screenshots/
 export PATH="$HOME/.cargo/bin:$PATH"
+export BAT_THEME="base16"
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
@@ -132,6 +133,7 @@ alias fz="fzf --preview='bat --theme=base16 --color=always {}'"
 alias ff='fastfetch'
 alias g='grep'
 alias b='bat --color=always --theme=base16'
+alias bat='bat --color=always --theme=base16'
 alias c='clear'
 alias vs='code'
 alias s='source'
