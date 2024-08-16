@@ -14,7 +14,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 if [ -d "$HOME/.cache/wal" ]; then
-#   cat "$HOME/.cache/wal/sequences"  &
+ #  cat "$HOME/.cache/wal/sequences"  &
     clear
 fi
 
@@ -39,6 +39,7 @@ eval $(thefuck --alias)
 eval "$(fzf --zsh)"
 autoload -Uz compinit && compinit
 zinit cdreplay -q
+eval "$(register-python-argcomplete pipx)"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --theme=base16 --color=always --line-range :100 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --icons --color=always --git-ignore --group-directories-first  --level=2 {} | head -200'"
 export EDITOR='nvim'
@@ -175,3 +176,6 @@ alias sshoff='systemctl disable sshd && systemctl stop sshd'
 alias pw='yy ~/Pictures/Wallpapers/ && cd ~'
 alias sw='~/Code/Scripts/wpset.sh -w'
 alias st='~/Customization/themes/Colloid-gtk-theme-main/install.sh -c dark -l system --tweaks black rimless normal float && clear'
+
+# Created by `pipx` on 2024-08-16 14:32:20
+export PATH="$PATH:/home/bardiya/.local/bin"
