@@ -32,12 +32,15 @@ stow .
 ### Packages for terminal
 
 ```bash
-sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop ttf-jetbrains-mono-nerd
+sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop tmux  ttf-jetbrains-mono-nerd
 ```
 
 ```bash
 yay -S oh-my-posh
 ```
+
+> [!WARNING]
+> Don't forget to install tpm for tmux to work
 
 ### Packages for hyprland
 
