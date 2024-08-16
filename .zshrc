@@ -46,6 +46,7 @@ export HOME="/home/bardiya" export
 export HYPRSHOT_DIR=$HOME/Pictures/Screenshots/
 export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME="base16"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
