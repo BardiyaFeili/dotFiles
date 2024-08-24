@@ -12,12 +12,14 @@ WALL_PATH=$(<'/home/bardiya/.cache/wal/wal')
 
 echo -e "preload = $WALL_PATH \nwallpaper = eDP-1, $WALL_PATH" >'/home/bardiya/dotfiles/.config/hypr/hyprpaper.conf'
 
+python3 ~/Code/Scripts/rgbtohexthing.py
+
 killall hyprpaper
 hyprpaper
 
 killall waybar
 waybar
 
-pywalfox update
+#pywalfox update
 
 python3 ~/Code/Scripts/colorpicker.py

@@ -90,11 +90,6 @@
       "keyColor": "green"
     },
     {
-      "type": "uptime",
-      "key": "│ ├󰅐",
-      "keyColor": "green"
-    },
-    {
       "type": "display",
       "key": "│ └󰍹",
       "keyColor": "green"
