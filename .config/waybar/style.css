@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background: rgba(22, 22, 30, 0.9);
+    background: rgba(22, 22, 30, 0.85);
 }
 
 .modules-left,
@@ -50,9 +50,14 @@ window#waybar {
 #workspaces button {
     color: #7aa2f7;
     margin: 0px 5px;
+    transition: all 0.3s;
 }
 
 #workspaces button.active {
     background: #7aa2f7;
     color: #1a1b26;
+}
+
+#battery.critical:not(.charging) {
+    color: rgb(221, 39, 39);
 }
