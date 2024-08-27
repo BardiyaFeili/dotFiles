@@ -151,6 +151,8 @@ alias bt='btop'
 
 alias py='python3'
 alias pipi='pip install'
+alias v="source ./.venv/bin/activate"
+alias venv="source ./.venv/bin/activate"
 
 alias ca='cargo'
 alias car='cargo run'

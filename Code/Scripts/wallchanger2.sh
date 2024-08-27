@@ -6,13 +6,7 @@ while getopts "w:" arg; do
   esac
 done
 
-wal -i ~/Pictures/Wallpapers/$WALL -n
-
-WALL_PATH=$(<'/home/bardiya/.cache/wal/wal')
-
-echo -e "preload = $WALL_PATH \nwallpaper = eDP-1, $WALL_PATH" >'/home/bardiya/dotfiles/.config/hypr/hyprpaper.conf'
-
-python3 ~/Code/Scripts/rgbtohexthing.py
+echo -e "preload = $WALL \nwallpaper = eDP-1, $WALL" >'/home/bardiya/dotfiles/.config/hypr/hyprpaper.conf'
 
 killall hyprpaper
 hyprpaper
@@ -21,5 +15,3 @@ killall waybar
 waybar
 
 #pywalfox update
-
-python3 ~/Code/Scripts/colorpicker.py

@@ -10,7 +10,6 @@
 
 window#waybar {
     background: transparent;
-    margin-top: 10px;
 }
 
 window#waybar.hidden {

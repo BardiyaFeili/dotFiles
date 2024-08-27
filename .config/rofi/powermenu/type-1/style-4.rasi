@@ -78,7 +78,7 @@ prompt {
     enabled:                     true;
     padding:                     10px;
     border-radius:               10px 15px 10px 15px;
-    background-color:            @active;
+    background-color:            transparent;
     text-color:                  @background;
 }
 
