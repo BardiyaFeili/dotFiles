@@ -6,13 +6,13 @@
 }
 
 window#waybar {
-    background: rgba(22, 22, 30, 0.85);
+    background: rgba(22, 22, 30, 0.9);
 }
 
 .modules-left,
 .modules-right,
 .modules-center {
-    background: #1e202e;
+    background: rgb(30, 32, 46);
     margin: 7px;
 }
 
@@ -31,6 +31,16 @@ window#waybar {
     margin-left: 15px;
     color: #7aa2f7;
     padding: 1px;
+    transition: all 0.1s;
+}
+
+#custom-launcher:hover,
+#pulseaudio:hover,
+#battery:hover,
+#network:hover,
+#custom-power:hover,
+#custom-media:hover {
+    color: #6f94e2;
 }
 
 #custom-power {
@@ -50,7 +60,7 @@ window#waybar {
 #workspaces button {
     color: #7aa2f7;
     margin: 0px 5px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 #workspaces button.active {
