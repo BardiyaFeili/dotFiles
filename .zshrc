@@ -10,13 +10,8 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-#Load in OMP and pywal
+#Load in OMP
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
-if [ -d "$HOME/.cache/wal" ]; then
- #  cat "$HOME/.cache/wal/sequences"  &
-    clear
-fi
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -40,15 +35,16 @@ eval "$(fzf --zsh)"
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 eval "$(register-python-argcomplete pipx)"
-export FZF_CTRL_T_OPTS="--preview 'bat -n --theme=base16 --color=always --line-range :100 {}'"
-export FZF_ALT_C_OPTS="--preview 'eza --tree --icons --color=always --git-ignore --group-directories-first  --level=2 {} | head -200'"
-export EDITOR='nvim'
-export HOME="/home/bardiya" export 
+
+# Env vars
 export HYPRSHOT_DIR=$HOME/Pictures/Screenshots/
 export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME="base16"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export EDITOR='nvim'
 
+# Fzf env vars
+export FZF_CTRL_T_OPTS="--preview 'bat -n --theme=base16 --color=always --line-range :100 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --icons --color=always --git-ignore --group-directories-first  --level=2 {} | head -200'"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
@@ -73,6 +69,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=spinner:#ff007c \
 "
 
+# for yazi
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"

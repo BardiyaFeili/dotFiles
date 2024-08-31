@@ -8,7 +8,7 @@ done
 
 echo -e "preload = $WALL \nwallpaper = eDP-1, $WALL" >'/home/bardiya/dotfiles/.config/hypr/hyprpaper.conf'
 
-echo -e "\$wp = $WALL" >'/home/bardiya/.cache/wal/hyprcolors.conf'
+echo -e "\$wp = $WALL" >'/home/bardiya/.config/hypr/hyprcolors.conf'
 
 killall hyprpaper
 hyprpaper
