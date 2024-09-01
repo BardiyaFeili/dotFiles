@@ -12,6 +12,3 @@ echo -e "\$wp = $WALL" >'/home/bardiya/.config/hypr/hyprcolors.conf'
 
 killall hyprpaper
 hyprpaper
-
-killall waybar
-waybar

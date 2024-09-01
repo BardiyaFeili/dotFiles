@@ -154,7 +154,8 @@ alias venv="source ./.venv/bin/activate"
 alias ca='cargo'
 alias car='cargo run'
 alias cai='cargo install'
-alias cr='rustc'
+alias cat='cargo test'
+alias cac='rustc'
 
 alias mu='mullvad'
 alias muc='mullvad connect'
