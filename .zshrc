@@ -145,6 +145,8 @@ alias cd='z'
 alias h='hyprctl'
 alias hi='hello'
 alias bt='btop'
+alias grep='rg'
+alias g='rg'
 
 alias py='python3'
 alias pipi='pip install'
@@ -154,7 +156,6 @@ alias venv="source ./.venv/bin/activate"
 alias ca='cargo'
 alias car='cargo run'
 alias cai='cargo install'
-alias cat='cargo test'
 alias cac='rustc'
 
 alias mu='mullvad'
