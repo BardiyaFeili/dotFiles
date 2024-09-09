@@ -169,13 +169,12 @@ alias nivm='nvim'
 alias sen='systemctl enable'
 alias son='systemctl start'
 alias sdi='systemctl disable'
-alias soff-'systemctl stop'
+alias soff='systemctl stop'
+alias sre='systemctl restart'
 
 alias sshon='systemctl enable sshd && systemctl start sshd'
 alias sshoff='systemctl disable sshd && systemctl stop sshd'
 
-alias pw='yy ~/Pictures/Wallpapers/ && cd ~'
-alias sw='~/Code/Scripts/wpset.sh -w'
 alias st='~/Customization/themes/Colloid-gtk-theme-main/install.sh -c dark -l system --tweaks black rimless normal float && clear'
 
 # Created by `pipx` on 2024-08-16 14:32:20

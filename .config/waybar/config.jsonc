@@ -75,7 +75,7 @@
     "on-scroll-up": "playerctl volume .05+",
     "escape": true,
     // "exec": "$HOME/Code/Scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
-    "exec": "$HOME/Code/Scripts/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    "exec": "./scripts/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "backlight": {
     "tooltip": false,
