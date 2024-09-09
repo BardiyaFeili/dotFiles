@@ -27,20 +27,17 @@ stow .
 ## Installing all the programs
 
 > [!WARNING]
-> First install yay then do the rest
+> Don't forget to install yay and tpm
 
 ### Packages for terminal
 
 ```bash
-sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop tmux  ttf-jetbrains-mono-nerd
+sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop tmux ttf-jetbrains-mono-nerd
 ```
 
 ```bash
 yay -S oh-my-posh
 ```
-
-> [!WARNING]
-> Don't forget to install tpm for tmux to work
 
 ### Packages for hyprland
 
@@ -59,5 +56,5 @@ sudo pacman -S hello sl zed firefox
 ```
 
 ```bash
-yay -S visual-studio-code-bin mullvad-bin
+yay -S visual-studio-code-bin mullvad-bin zen-browser-bin ventoy-bin vesktop-bin spotify spicetify-cli
 ```
