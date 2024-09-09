@@ -56,5 +56,5 @@ sudo pacman -S hello sl zed firefox
 ```
 
 ```bash
-yay -S visual-studio-code-bin mullvad-bin zen-browser-bin ventoy-bin vesktop-bin spotify spicetify-cli
+yay -S visual-studio-code-bin mullvad-vpn-bin zen-browser-bin ventoy-bin vesktop-bin spotify spicetify-cli
 ```
