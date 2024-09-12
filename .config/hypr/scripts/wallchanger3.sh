@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-DIR_PATH="/home/bardiya/Pictures/Wallpapers/"
+DIR_PATH="$HOME/Pictures/Wallpapers/"
 WALL=$(copyq clipboard)
 
 # Convert both to absolute paths
@@ -11,14 +11,14 @@ REAL_DIR_PATH=$(realpath "$DIR_PATH")
 # Check if the file is inside the directory
 if [[ "$REAL_FILE_PATH" == "$REAL_DIR_PATH"* ]]; then
   WALL=$(copyq clipboard)
-  echo -e "$WALL" >"./wptext"
+  echo -e "$WALL" >"$HOME/.config/hypr/scripts/wptext"
 else
-  WALL=$(<"./wptext")
+  WALL=$(<"$HOME/.config/hypr/scripts/wptext")
 fi
 
-echo -e "preload = $WALL \nwallpaper = eDP-1, $WALL" >'/home/bardiya/dotfiles/.config/hypr/hyprpaper.conf'
+echo -e "preload = $WALL \nwallpaper = eDP-1, $WALL" >"$HOME/.config/hypr/hyprpaper.conf"
 
-echo -e "\$wp = $WALL" >'/home/bardiya/.config/hypr/hyprcolors.conf'
+echo -e "\$wp = $WALL" >"$HOME/.config/hypr/hyprcolors.conf"
 
 killall hyprpaper
 hyprpaper

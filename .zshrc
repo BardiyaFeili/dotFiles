@@ -178,4 +178,4 @@ alias sshoff='systemctl disable sshd && systemctl stop sshd'
 alias st='~/Customization/themes/Colloid-gtk-theme-main/install.sh -c dark -l system --tweaks black rimless normal float && clear'
 
 # Created by `pipx` on 2024-08-16 14:32:20
-export PATH="$PATH:/home/bardiya/.local/bin"
+export PATH="$PATH:~/.local/bin"
