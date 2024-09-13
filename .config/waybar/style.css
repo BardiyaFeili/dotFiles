@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 * {
     border: none;
     font-family: "JetBrinsMono NF Bold";
@@ -6,13 +8,13 @@
 }
 
 window#waybar {
-    background: rgba(22, 22, 30, 0.9);
+    background: @back;
 }
 
 .modules-left,
 .modules-right,
 .modules-center {
-    background: rgb(30, 32, 46);
+    background: @back2;
     margin: 7px;
 }
 
@@ -29,7 +31,7 @@ window#waybar {
 #custom-power {
     margin-right: 15px;
     margin-left: 15px;
-    color: #7aa2f7;
+    color: @text;
     padding: 1px;
     transition: all 0.1s;
 }
@@ -40,7 +42,7 @@ window#waybar {
 #network:hover,
 #custom-power:hover,
 #custom-media:hover {
-    color: #6f94e2;
+    color: @text-h;
 }
 
 #custom-power {
@@ -53,21 +55,21 @@ window#waybar {
 }
 
 #workspaces {
-    color: #7aa2f7;
+    color: @text;
     margin: 0;
 }
 
 #workspaces button {
-    color: #7aa2f7;
+    color: @text;
     margin: 0px 5px;
     transition: all 0.2s;
 }
 
 #workspaces button.active {
-    background: #7aa2f7;
-    color: #1a1b26;
+    background: @text;
+    color: @back2;
 }
 
 #battery.critical:not(.charging) {
-    color: rgb(221, 39, 39);
+    color: @urgent;
 }
