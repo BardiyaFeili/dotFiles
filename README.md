@@ -18,7 +18,11 @@ gh auth Login
 
 ```bash
 git clone https://github.com/BardiyaFeili/dotfiles.git ~/dotfiles
+```
 
+You can use the install script at ~/dotfiles/install.sh after this or continue manually.
+
+```bash
 cd ~/dotfiles
 
 stow .
