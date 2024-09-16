@@ -20,8 +20,6 @@ gh auth Login
 git clone https://github.com/BardiyaFeili/dotfiles.git ~/dotfiles
 ```
 
-You can use the install script at ~/dotfiles/install.sh after this or continue manually.
-
 ```bash
 cd ~/dotfiles
 
@@ -30,8 +28,21 @@ stow .
 
 ## Installing all the programs
 
-> [!WARNING]
-> Don't forget to install yay and tpm
+### Other things that you need
+
+#### Install yay
+
+```bash
+  git clone https://aur.archlinux.org/yay.git ./yay
+  cd yay && makepkg -si --noconfirm
+  cd .. && rm -rf yay
+```
+
+#### Install tpm
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 ### Packages for terminal
 
