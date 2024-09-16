@@ -10,7 +10,7 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-#Load in OMP
+# Load in OMP
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 # Add in zsh plugins
@@ -28,7 +28,7 @@ zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
-#For plugins
+# For plugins
 eval "$(zoxide init zsh)"
 eval $(thefuck --alias)
 eval "$(fzf --zsh)"
@@ -38,9 +38,12 @@ eval "$(register-python-argcomplete pipx)"
 
 # Env vars
 export HYPRSHOT_DIR=$HOME/Pictures/Screenshots/
-export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME="base16"
 export EDITOR='nvim'
+
+# PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:~/.local/bin"
 
 # Fzf env vars
 export FZF_CTRL_T_OPTS="--preview 'bat -n --theme=base16 --color=always --line-range :100 {}'"
@@ -69,7 +72,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=spinner:#ff007c \
 "
 
-# for yazi
+# For yazi
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -79,9 +82,10 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
-#KeyBindings
+# KeyBindings
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
+bindkey '^@' autosuggest-execute
 
 # History
 HISTSIZE=5000
@@ -102,7 +106,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:*' fzf-preview 'eza --tree --color=always --icons --git-ignore --group-directories-first --level=2 $realpath'
 
-#Aliases
+# Aliases
 alias pi='sudo pacman -S'
 alias pu='sudo pacman -Syu'
 alias pr='sudo pacman -R'
@@ -154,6 +158,7 @@ alias v="source ./.venv/bin/activate"
 alias venv="source ./.venv/bin/activate"
 
 alias ca='cargo'
+alias can='cargo new'
 alias car='cargo run'
 alias cai='cargo install'
 alias cac='rustc'
@@ -165,17 +170,16 @@ alias mud='mullvad disconnect'
 alias n='nvim'
 alias nvi='nvim'
 alias nivm='nvim'
+alias vim='nvim'
+alias nvmi='nvim'
 
-alias sen='systemctl enable'
-alias son='systemctl start'
-alias sdi='systemctl disable'
-alias soff='systemctl stop'
-alias sre='systemctl restart'
+alias sen='sudo systemctl enable'
+alias son='sudo systemctl start'
+alias sdi='sudo systemctl disable'
+alias soff='sudo systemctl stop'
+alias sre='sudo systemctl restart'
 
-alias sshon='systemctl enable sshd && systemctl start sshd'
-alias sshoff='systemctl disable sshd && systemctl stop sshd'
+alias sshon='sudo systemctl enable sshd && sudo systemctl start sshd'
+alias sshoff='sudo systemctl disable sshd && sudo systemctl stop sshd'
 
 alias st='~/Customization/themes/Colloid-gtk-theme-main/install.sh -c dark -l system --tweaks black rimless normal float && clear'
-
-# Created by `pipx` on 2024-08-16 14:32:20
-export PATH="$PATH:~/.local/bin"
