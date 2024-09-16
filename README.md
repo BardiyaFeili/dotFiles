@@ -20,6 +20,9 @@ gh auth Login
 git clone https://github.com/BardiyaFeili/dotfiles.git ~/dotfiles
 ```
 
+> [!TIP]
+> You can do the rest of the installation with the install script
+
 ```bash
 cd ~/dotfiles
 
