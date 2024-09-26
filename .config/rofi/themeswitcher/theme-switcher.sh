@@ -5,10 +5,10 @@ theme="$1"
 flavor="$2"
 
 # Set the theme for kitty
-echo -e "include ./$theme$flavor.conf" >"$HOME/.config/kitty/themes/theme.conf"
+echo -e "include ./themes/$theme$flavor.conf" >"$HOME/.config/kitty/theme.conf"
 
 # Set the colors for Hyprland borders
-echo -e "source = ~/.config/hypr/hyprthemes/$theme.conf" >"$HOME/.config/hypr/hyprcolors.conf"
+echo -e "source = ~/.config/hypr/styles/themes/$theme.conf" >"$HOME/.config/hypr/styles/theme.conf"
 
 # Set the theme for Neovim
 echo -e "return {

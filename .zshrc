@@ -132,11 +132,13 @@ alias t='eza --tree --color=always --icons --level=2'
 alias mk='mkdir'
 alias md='mkdir'
 alias rf='rm -rf'
+
+alias b='bat --color=always --theme=base16'
+alias bat='bat --color=always --theme=base16'
+
 alias fz="fzf --preview='bat --theme=base16 --color=always {}'"
 alias ff='fastfetch'
 alias g='grep'
-alias b='bat --color=always --theme=base16'
-alias bat='bat --color=always --theme=base16'
 alias c='clear'
 alias vs='code'
 alias s='source'
@@ -149,6 +151,7 @@ alias cd='z'
 alias h='hyprctl'
 alias hi='hello'
 alias bt='btop'
+
 alias grep='rg'
 alias g='rg'
 
@@ -179,7 +182,7 @@ alias sdi='sudo systemctl disable'
 alias soff='sudo systemctl stop'
 alias sre='sudo systemctl restart'
 
-alias sshon='sudo systemctl enable sshd && sudo systemctl start sshd'
-alias sshoff='sudo systemctl disable sshd && sudo systemctl stop sshd'
+alias sshon='sudo systemctl enable sshd --now'
+alias sshoff='sudo systemctl disable sshd --now'
 
-alias st='~/Customization/themes/Colloid-gtk-theme-main/install.sh -c dark -l system --tweaks black rimless normal float && clear'
+alias st='~/Customization/themes/colloid/install.sh -c dark -l system --tweaks black rimless normal float && clear'
