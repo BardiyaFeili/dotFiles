@@ -17,7 +17,7 @@ yay -S oh-my-posh --noconfirm
 case $1 in
 hyprland)
   sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar copyq polkit-gnome --noconfirm
-  yay -S hyprshot hyprpicker --noconfirm
+  yay -S hyprshot hyprpicker clipse --noconfirm
   ;;
 *)
   echo "First arg is wrong"

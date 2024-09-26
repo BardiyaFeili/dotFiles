@@ -1,5 +1,5 @@
 /.config/tmux/plugins
 .config/btop/btop.log
 .config/hypr/hyprpaper.conf
-.config/hypr/hyprcolors.conf
-.config/hypr/scripts/wptext
+.config/hypr/styles/wallpaper.conf
+.config/hypr/styles/theme.conf

@@ -20,6 +20,7 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 /*****----- Main Window -----*****/
+
 window {
     transparency:                "real";
     location:                    center;

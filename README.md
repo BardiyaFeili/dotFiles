@@ -64,7 +64,7 @@ sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland 
 ```
 
 ```bash
-yay -S hyprshot hyprpicker
+yay -S hyprshot hyprpicker clipse
 ```
 
 ### Other Packages you would want

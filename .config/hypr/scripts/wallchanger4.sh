@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALL=$(copyq clipboard)
+WALL=$(clipse -p)
 
 echo -e "preload = $WALL \nwallpaper = eDP-1, $WALL" >"$HOME/.config/hypr/hyprpaper.conf"
 
