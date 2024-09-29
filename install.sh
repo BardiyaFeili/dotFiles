@@ -16,7 +16,7 @@ yay -S oh-my-posh --noconfirm
 
 case $1 in
 hyprland)
-  sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar copyq polkit-gnome --noconfirm
+  sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar polkit-gnome --noconfirm
   yay -S hyprshot hyprpicker clipse --noconfirm
   ;;
 *)
