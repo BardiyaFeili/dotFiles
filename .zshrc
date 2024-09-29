@@ -37,16 +37,16 @@ zinit cdreplay -q
 eval "$(register-python-argcomplete pipx)"
 
 # Env vars
-export HYPRSHOT_DIR=$HOME/Pictures/Screenshots/
-export BAT_THEME="base16"
+export BAT_THEME="tokyonight_night"
 export EDITOR='nvim'
+export MANPAGER="sh -c 'col -bx | bat --paging=always -l man -p'"
 
 # PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:~/.local/bin"
 
 # Fzf env vars
-export FZF_CTRL_T_OPTS="--preview 'bat -n --theme=base16 --color=always --line-range :100 {}'"
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :100 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --icons --color=always --git-ignore --group-directories-first  --level=2 {} | head -200'"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
@@ -133,10 +133,10 @@ alias mk='mkdir'
 alias md='mkdir'
 alias rf='rm -rf'
 
-alias b='bat --color=always --theme=base16'
-alias bat='bat --color=always --theme=base16'
+alias b='bat --color=always'
+alias bat='bat --color=always'
 
-alias fz="fzf --preview='bat --theme=base16 --color=always {}'"
+alias fz="fzf --preview='bat --color=always {}'"
 alias ff='fastfetch'
 alias g='grep'
 alias c='clear'
@@ -148,9 +148,11 @@ alias p='pnpm'
 alias bu='bun'
 alias wh='which'
 alias cd='z'
-alias h='hyprctl'
 alias hi='hello'
 alias bt='btop'
+
+alias h='hyprctl'
+alias hde='hyprctl dispatch exec'
 
 alias grep='rg'
 alias g='rg'
