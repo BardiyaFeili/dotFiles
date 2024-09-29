@@ -60,7 +60,7 @@ yay -S oh-my-posh
 ### Packages for hyprland
 
 ```bash
-sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar copyq polkit-gnome
+sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar polkit-gnome
 ```
 
 ```bash
