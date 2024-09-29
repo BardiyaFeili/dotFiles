@@ -115,7 +115,6 @@ alias pv="pacman -Q"
 
 alias yi='yay -S'
 alias yu='yay -Syu'
-alias yr='yay -R'
 
 alias fpi='flatpak install'
 alias fpr='flatpak remove'
@@ -150,8 +149,10 @@ alias wh='which'
 alias cd='z'
 alias hi='hello'
 alias bt='btop'
+alias e='exit'
 
 alias h='hyprctl'
+alias hk='hyprctl kill'
 alias hde='hyprctl dispatch exec'
 
 alias grep='rg'
@@ -166,16 +167,16 @@ alias ca='cargo'
 alias can='cargo new'
 alias car='cargo run'
 alias cai='cargo install'
-alias cac='rustc'
+alias rc='rustc'
 
 alias mu='mullvad'
 alias muc='mullvad connect'
 alias mud='mullvad disconnect'
 
 alias n='nvim'
+alias vim='nvim'
 alias nvi='nvim'
 alias nivm='nvim'
-alias vim='nvim'
 alias nvmi='nvim'
 
 alias sen='sudo systemctl enable'
