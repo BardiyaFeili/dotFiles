@@ -22,6 +22,8 @@ window#waybar {
 #cpu,
 #memory,
 #clock,
+#keyboard-state,
+#language,
 #custom-media,
 #tray,
 #backlight,

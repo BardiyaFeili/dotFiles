@@ -7,10 +7,10 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-# Source/Load zinit
+# Source/Load Zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Load in OMP
+# Load in Oh My Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 # Add in zsh plugins
@@ -34,16 +34,14 @@ eval $(thefuck --alias)
 eval "$(fzf --zsh)"
 autoload -Uz compinit && compinit
 zinit cdreplay -q
-eval "$(register-python-argcomplete pipx)"
 
 # Env vars
-export BAT_THEME="tokyonight_night"
 export EDITOR='nvim'
 export MANPAGER="sh -c 'col -bx | bat --paging=always -l man -p'"
+export BAT_THEME="tokyonight_night"
 
 # PATH
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:~/.local/bin"
 
 # Fzf env vars
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :100 {}'"
@@ -55,11 +53,11 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --layout=reverse \
   --border=none
   --color=bg+:#283457 \
-  --color=bg:#16161e \
   --color=border:#27a1b9 \
+  --color=bg:-1 \
   --color=fg:#c0caf5 \
   --color=gutter:#16161e \
-  --color=header:#ff9e64 \
+  --color=header:#27A1B9 \
   --color=hl+:#2ac3de \
   --color=hl:#2ac3de \
   --color=info:#545c7e \
@@ -68,7 +66,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=prompt:#2ac3de \
   --color=query:#c0caf5:regular \
   --color=scrollbar:#27a1b9 \
-  --color=separator:#ff9e64 \
+  --color=separator:#27A1B9 \
   --color=spinner:#ff007c \
 "
 
@@ -135,28 +133,28 @@ alias rf='rm -rf'
 alias b='bat --color=always'
 alias bat='bat --color=always'
 
-alias fz="fzf --preview='bat --color=always {}'"
-alias ff='fastfetch'
-alias g='grep'
+alias bu='bun'
+alias p='pnpm'
+
+alias cd='z'
+alias f='fuck'
+alias e='exit'
 alias c='clear'
 alias vs='code'
-alias s='source'
-alias f='fuck'
-alias a='aria2c -d ~/Downloads/aria2/'
-alias p='pnpm'
-alias bu='bun'
-alias wh='which'
-alias cd='z'
-alias hi='hello'
 alias bt='btop'
-alias e='exit'
+alias s='source'
+alias wh='which'
+alias hi='hello'
+alias ff='fastfetch'
+alias a='aria2c -d ~/Downloads/aria2/'
+alias fz="fzf --preview='bat --color=always {}'"
 
 alias h='hyprctl'
 alias hk='hyprctl kill'
 alias hde='hyprctl dispatch exec'
 
-alias grep='rg'
 alias g='rg'
+alias grep='rg'
 
 alias py='python3'
 alias pipi='pip install'
@@ -189,3 +187,13 @@ alias sshon='sudo systemctl enable sshd --now'
 alias sshoff='sudo systemctl disable sshd --now'
 
 alias st='~/Customization/themes/colloid/install.sh -c dark -l system --tweaks black rimless normal float && clear'
+
+mkz () {
+  mkdir $1
+  z $1
+}
+
+zl () {
+  z $1
+  eza -a $cwd
+}
