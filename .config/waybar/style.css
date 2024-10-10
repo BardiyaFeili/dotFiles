@@ -28,6 +28,7 @@ window#waybar {
 #tray,
 #backlight,
 #pulseaudio,
+#bluetooth,
 #network,
 #battery,
 #custom-power {
@@ -43,6 +44,8 @@ window#waybar {
 #battery:hover,
 #network:hover,
 #custom-power:hover,
+#language,
+#bluetooth
 #custom-media:hover {
     color: @text-h;
 }
