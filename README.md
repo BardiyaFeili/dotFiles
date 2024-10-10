@@ -41,13 +41,13 @@ stow .
   cd .. && rm -rf yay
 ```
 
-#### Install tpm
+#### Install TPM for Tmux
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-### Packages for terminal
+### Packages for the terminal
 
 ```bash
 sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta thefuck btop tmux ttf-jetbrains-mono-nerd
@@ -57,7 +57,7 @@ sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta the
 yay -S oh-my-posh
 ```
 
-### Packages for hyprland
+### Packages for Hyprland
 
 ```bash
 sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland rofi-wayland dunst waybar polkit-gnome
