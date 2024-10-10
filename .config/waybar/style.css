@@ -44,8 +44,8 @@ window#waybar {
 #battery:hover,
 #network:hover,
 #custom-power:hover,
-#language,
-#bluetooth
+#language:hover,
+#bluetooth:hover,
 #custom-media:hover {
     color: @text-h;
 }
