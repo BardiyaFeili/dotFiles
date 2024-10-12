@@ -3,6 +3,7 @@
 version = 2
 final_space = true
 console_title_template = '{{ .Shell }} in {{ .Folder }}'
+enable_cursor_positioning = true
 
 [[blocks]]
 type = 'prompt'
@@ -51,6 +52,12 @@ style = "plain"
 foreground = "red"
 background = "transparent"
 template = "  {{ .Venv }} "
+
+[[blocks.segments]]
+type = "session"
+style = "plain"
+foreground = "red"
+template = "{{ if .SSHSession }} {{ .UserName }}@{{.HostName}}{{ end }}"
 
 [[blocks]]
 type = 'prompt'

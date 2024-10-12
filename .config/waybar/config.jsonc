@@ -41,9 +41,8 @@
   },
   "hyprland/language": {
     "format": "  {short}",
-    "tooltip": true,
-    "tooltip-format": "{long} {flag}",
-    "on-click": "hyprctl switchxkblayout current next"
+    "on-click": "hyprctl switchxkblayout current next",
+    "tooltip-format": "{long}"
   },
   "custom/media": {
     "format": "{}",

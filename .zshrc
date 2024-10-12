@@ -194,6 +194,5 @@ mkz () {
 }
 
 zl () {
-  z $1
-  eza -a $cwd
+  z $1 && eza -a $cwd
 }
