@@ -29,7 +29,7 @@
   // ------------ //
   "custom/launcher": {
     "format": " ",
-    "on-click": "~/.config/rofi/launchers/type-2/launcher.sh",
+    "on-click": "~/.config/rofi/launchers/type-3/launcher.sh",
     "on-click-right": "killall rofi",
     "tooltip-format": "Arch BTW"
   },
