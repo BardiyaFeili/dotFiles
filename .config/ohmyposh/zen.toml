@@ -54,6 +54,15 @@ enable_cursor_positioning = true
     template   = "  {{ .Venv }} "
 
   [[blocks.segments]]
+    type       = "rust"
+    style      = "plain"
+    foreground = "red"
+    template   = "  {{ .Full }} "
+
+    [blocks.segments.properties]
+      display_mode = "files"
+
+  [[blocks.segments]]
     type       = "session"
     style      = "plain"
     foreground = "red"

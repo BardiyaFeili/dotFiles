@@ -37,7 +37,6 @@ zinit cdreplay -q
 
 # Env vars
 export EDITOR='nvim'
-export MANPAGER="sh -c 'col -bx | bat --paging=always -l man -p'"
 export BAT_THEME="tokyonight_night"
 
 # PATH
