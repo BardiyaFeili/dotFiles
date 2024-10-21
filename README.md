@@ -33,12 +33,12 @@ stow .
 
 ### Other things that you need
 
-#### Install yay
+#### Install Paru
 
 ```bash
-  git clone https://aur.archlinux.org/yay.git ./yay
-  cd yay && makepkg -si --noconfirm
-  cd .. && rm -rf yay
+  git clone https://aur.archlinux.org/paru.git ./paru
+  cd paru && makepkg -si --noconfirm
+  cd .. && rm -rf paru
 ```
 
 #### Install TPM for Tmux
@@ -54,7 +54,7 @@ sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta the
 ```
 
 ```bash
-yay -S oh-my-posh
+yay -S oh-my-posh-bin
 ```
 
 ### Packages for Hyprland
