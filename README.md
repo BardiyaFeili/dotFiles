@@ -54,7 +54,7 @@ sudo pacman -S zsh fastfetch kitty neovim  yazi fzf bat eza zoxide git-delta the
 ```
 
 ```bash
-yay -S oh-my-posh-bin
+paru -S oh-my-posh-bin
 ```
 
 ### Packages for Hyprland
@@ -64,7 +64,7 @@ sudo pacman -S hyprland hyprlock hypridle hyprpaper xdg-desktop-portal-hyprland 
 ```
 
 ```bash
-yay -S hyprshot hyprpicker clipse
+paru -S hyprshot hyprpicker clipse
 ```
 
 ### Other Packages you would want
@@ -74,5 +74,5 @@ sudo pacman -S hello sl zed firefox
 ```
 
 ```bash
-yay -S visual-studio-code-bin mullvad-vpn-bin zen-browser-bin ventoy-bin vesktop-bin spotify spicetify-cli
+paru -S visual-studio-code-bin mullvad-vpn-bin zen-browser-bin ventoy-bin vesktop-bin spotify spicetify-cli
 ```
