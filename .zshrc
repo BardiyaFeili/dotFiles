@@ -104,14 +104,12 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:*' fzf-preview 'eza --tree --color=always --icons --git-ignore --group-directories-first --level=2 $realpath'
 
 # Aliases
-alias pi='sudo pacman -S'
-alias pu='sudo pacman -Syu'
-alias pr='sudo pacman -R'
-alias ps='pacman -Qs'
-alias pv="pacman -Q"
-
-alias yi='yay -S'
-alias yu='yay -Syu'
+alias pa='paru'
+alias pi='paru -S'
+alias pu='paru -Syu'
+alias pr='paru -R'
+alias ps='paru -Qs'
+alias pv="paru -Q"
 
 alias fpi='flatpak install'
 alias fpr='flatpak remove'
