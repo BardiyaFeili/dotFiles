@@ -16,6 +16,7 @@ configuration {
 @import                          "colors.rasi"
 @import                          "fonts.rasi"
 
+
 /*****----- Main Window -----*****/
 window {
     location:                    center;
